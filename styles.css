@@ -1,168 +1,16 @@
 /* Reset básico */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background: #f8f9fa;
   color: #212529;
 }
-/* Estilos generales */
-/*imgs*/
-.profile-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-/* Card estilos */
-.card-centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
-.profile-img-large {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-}
-
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0.5rem 0 1rem 0;
-}
-
-.hero-desc {
-  color: #444;
-  margin-bottom: 1.5rem;
-}
-
-.btn-primary {
-  display: inline-block;
-  background: #234cffe1;
-  color: #fff;
-  padding: 0.7rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  transition: background 0.2s;
-}
-
-.btn-primary:hover {
-  background: #0036c1;
-}
-
-.card section {
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-  text-align: left;
-}
-
-.card section h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.hero-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  text-align: left;
-  min-width: 260px;
-  max-width: 420px;
-}
-
-@media (max-width: 800px) {
-  .hero-flex {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-  .hero-text {
-    text-align: center;
-    max-width: 100%;
-  }
-}
-.card section.parrafo {
-  text-align: justify;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-}
-.services-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: stretch;
-  margin-top: 2rem;
-}
-
-.service-card {
-  background: #fff;
-  border-radius: 1rem;
-  border: 1.5px solid #e3e3e3;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
-  padding: 2rem 1.2rem 1.5rem 1.2rem;
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.service-icon {
-  width: 56px;
-  height: 56px;
-  margin-bottom: 1rem;
-}
-
-.service-card h4 {
-  margin: 0.5rem 0 0.7rem 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.service-card p {
-  font-size: 0.98rem;
-  color: #444;
-  margin: 0;
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .services-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .service-card {
-    width: 90%;
-    max-width: 350px;
-  }
-}
 /* Navbar */
 .navbar {
   background-color: #ffffff;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .container-fluid {
@@ -236,7 +84,7 @@ body {
   left: 0;
   background: #fff;
   min-width: 180px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   z-index: 1000;
   padding: 0.5rem 0;
@@ -255,7 +103,7 @@ body {
   color: #343a40;
 }
 
-/* Responsive */
+/* Responsive Navbar */
 @media (max-width: 991px) {
   .container-fluid {
     flex-direction: column;
@@ -273,5 +121,188 @@ body {
     position: static;
     box-shadow: none;
     min-width: 100%;
+  }
+}
+
+/* Card estilos generales */
+.card-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card section {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+}
+
+.card section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card section.parrafo {
+  text-align: justify;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Hero (presentación) */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  text-align: left;
+  min-width: 260px;
+  max-width: 420px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.hero-desc {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #234cffe1;
+}
+
+/* Imagen de perfil */
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-img-large {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+}
+
+/* Botón principal */
+.btn-primary {
+  display: inline-block;
+  background: #234cffe1;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0036c1;
+}
+
+/* Cards de servicios/portafolio */
+.services {
+  margin: 3rem auto 2rem auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1.5px solid #e3e3e3;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.1);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  border-color: #b6b6b6;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1rem;
+}
+
+.service-card h4 {
+  margin: 0.5rem 0 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.98rem;
+  color: #444;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive para servicios y hero */
+@media (max-width: 900px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
   }
 }
