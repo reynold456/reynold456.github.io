@@ -1,20 +1,19 @@
 /* Reset básico */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background: #f8f9fa;
   color: #212529;
-  background-image: url('assets/Fondos\ Finscope\ \(3\).png');
-    background-size: cover;      /* Ajusta la imagen para cubrir toda la pantalla */
+  background-image: url("assets/Fondo.png");
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
   background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat;/* Evita que la imagen se repita */
-
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 /* Estilos generales */
 .card {
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
   max-width: 700px;
   margin: 2rem auto;
   padding: 2rem 2.5rem;
@@ -29,7 +28,7 @@ body {
 .navbar {
   background-color: #343a40;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .container-fluid {
@@ -103,7 +102,7 @@ body {
   left: 0;
   background: #fff;
   min-width: 180px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   z-index: 1000;
   padding: 0.5rem 0;
