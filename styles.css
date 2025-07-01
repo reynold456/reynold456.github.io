@@ -6,23 +6,32 @@ body {
   color: #212529;
 }
 /* Estilos generales */
+/* Card estilos */
 .card {
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-  max-width: 700px;
+  max-width: 800px;
   margin: 2rem auto;
   padding: 2rem 2.5rem;
   border: 1px solid #e3e3e3;
+}
+
+.card h1, .card h2 {
+  margin-top: 0;
 }
 
 .card section + section {
   margin-top: 1.5rem;
 }
 
+.parrafo {
+  line-height: 1.8;
+}
+
 /* Navbar */
 .navbar {
-  background-color: #343a40;
+  background-color: #ffffff;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.04);
 }
@@ -34,7 +43,7 @@ body {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #000000;
   font-size: 1.5rem;
   text-decoration: none;
   margin-right: 1rem;
@@ -43,7 +52,7 @@ body {
 }
 
 .navbar-brand:hover {
-  color: #ffc107;
+  color: #004ef5;
 }
 
 .navbar-nav {
@@ -60,7 +69,7 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   padding: 0.5rem 0.9rem;
   border-radius: 0.25rem;
@@ -70,8 +79,8 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  background: #495057;
-  color: #ffc107;
+  background: #f0f0f0;
+  color: #234cffe1;
 }
 
 .nav-link.disabled {
