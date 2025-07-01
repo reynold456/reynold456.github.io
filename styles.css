@@ -14,28 +14,150 @@ body {
   object-fit: cover;
 }
 /* Card estilos */
-.card {
+.card-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img-large {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.hero-desc {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #234cffe1;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0036c1;
+}
+
+.card section {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+}
+
+.card section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  text-align: left;
+  min-width: 260px;
+  max-width: 420px;
+}
+
+@media (max-width: 800px) {
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+.card section.parrafo {
+  text-align: justify;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.service-card {
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem 2.5rem;
-  border: 1px solid #e3e3e3;
+  border: 1.5px solid #e3e3e3;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card h1, .card h2 {
-  margin-top: 0;
+.service-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1rem;
 }
 
-.card section + section {
-  margin-top: 1.5rem;
+.service-card h4 {
+  margin: 0.5rem 0 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.parrafo {
-  line-height: 1.8;
+.service-card p {
+  font-size: 0.98rem;
+  color: #444;
+  margin: 0;
+  text-align: center;
 }
 
+@media (max-width: 900px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
 /* Navbar */
 .navbar {
   background-color: #ffffff;
