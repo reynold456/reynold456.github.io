@@ -2,8 +2,14 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f8f9fa;
-  color: #212529;
+  background-color: #2d2d2e;
+  color: #ffffff;
+
+  background-image: url("./images/FondoPortafolio2.png");
+  background-size: cover;            /* Cubre toda la pantalla */
+  background-repeat: no-repeat;      /* No se repite */
+  background-position: center center;/* Centrado */
+  background-attachment: fixed;      /* Se queda fijo al hacer scroll */
 }
 
 /* Navbar */
@@ -125,6 +131,18 @@ body {
 }
 
 /* Card estilos generales */
+.card {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  border: 1px solid #e3e3e3;
+  color: #ffffff;
+  text-align: left;
+}
+
 .card-centered {
   display: flex;
   flex-direction: column;
@@ -165,6 +183,13 @@ body {
   text-align: left;
   min-width: 260px;
   max-width: 420px;
+  color: #fff;
+}
+.about {
+  color:#fff;
+}
+.parrafo {
+  color: #ffffff;
 }
 
 .hero-title {
@@ -180,12 +205,12 @@ body {
 }
 
 .hero-desc {
-  color: #444;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
 .highlight {
-  color: #234cffe1;
+  color: #2297e6e1;
 }
 
 /* Imagen de perfil */
@@ -203,7 +228,7 @@ body {
   object-fit: cover;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 140, 255, 0.08);
 }
 
 /* Botón principal */
@@ -223,13 +248,12 @@ body {
   background: #0036c1;
 }
 .card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0); /* Fondo transparente */
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(44,62,80,0.08);
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem 2.5rem;
-  border: 1px solid #e3e3e3;
 }
 
 /* Mejorar padding en móvil */
@@ -254,6 +278,7 @@ body {
   font-size: 1.7rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .services-cards {
